@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Card UI Design</title>
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Boxicons CSS-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <div class="profile-card">
+            <div class="image">
+                <img src="Caiden_profile_pic.jpg" alt="profile picture" class="profile-img">
+            </div>
+
+            <div class="text-data">
+                <span class="name">Caiden MacGregor</span>
+                <span class="job">English Teacher | Artist | Junior Developer</span>
+            </div>
+        
+            <div class="media-buttons">
+                <a href="#" class="link">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="#" class="link">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="#" class="link">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+            </div>
+
+            <div class="text-data2">
+                <span class="Exp">Exp</span>
+                <span class="Art">Art</span>
+                <span class="Dev">Dev</span>
+            </div>
+
+            <div class="buttons">
+                <button class="button">Message</button>
+            </div>
+
+            <div class="skills">
+                <div class="skill-icons">
+                <i class='bx bxl-html5'></i>
+                </div>
+                <div class="skill-icons">
+                <i class='bx bxl-css3'></i>
+                </div>
+                <div class="skill-icons">
+                <i class='bx bxl-javascript' ></i>
+                </div>
+                
+            </div>
+            </div>
+
+        </div>
+    </body>
+</html>
