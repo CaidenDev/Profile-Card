@@ -20,7 +20,7 @@
 <script type="text/javascript">
    (function(){
       emailjs.init({
-        publicKey: "0OIZOmpb2KxY0JPM4",
+        publicKey: "PUBLIC KEY",
       });
    })();
 </script>
