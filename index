@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,28 +12,40 @@
 
         <!--Boxicons CSS-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      
+        <!--Link email-->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "0OIZOmpb2KxY0JPM4",
+      });
+   })();
+</script>
 
     </head>
     <body>
         <div class="profile-card">
             <div class="image">
-                <img src="Caiden_profile_pic.jpg" alt="profile picture" class="profile-img">
+                <img src="ProfilePic.jpg" alt="profile picture" class="profile-img">
             </div>
 
             <div class="text-data">
                 <span class="name">Caiden MacGregor</span>
-                <span class="job">English Teacher | Artist | Junior Developer</span>
+                <span class="job">Junior Developer | Artist | English Teacher</span>
             </div>
         
             <div class="media-buttons">
-                <a href="#" class="link">
-                    <i class='bx bxl-linkedin'></i>
+                <a href="https://www.linkedin.com/in/caiden-macgregor-484393216/" class="link" target="_blank">
+                    <i class='bx bxl-linkedin'> </i>
                 </a>
-                <a href="#" class="link">
+                <a href="https://www.instagram.com/artbycaiden/" class="link" target="_blank">
                     <i class='bx bxl-instagram' ></i>
                 </a>
-                <a href="#" class="link">
-                    <i class='bx bxl-instagram' ></i>
+                <a href="https://github.com/CaidenDev" class="link" target="_blank">
+                    <i class='bx bxl-github'></i>
                 </a>
             </div>
 
@@ -42,9 +55,40 @@
                 <span class="Dev">Dev</span>
             </div>
 
-            <div class="buttons">
-                <button class="button">Message</button>
+            <div class="contact-section" id="contact-section">
+                
+                    <h3>Contact:</h3>
+                <label for="name"></label>
+
+                    <input type="text" 
+                    id="name" 
+                    name="name" 
+                    required 
+                    minlength="4" 
+                    maxlength="30" size="15"
+                    placeholder="Your name" /> 
+
+                <label for="email"></label>
+
+                    <input 
+                    type="email" 
+                    id="email" 
+                    pattern=".+@example\.com" 
+                    size="30" 
+                    required 
+                    placeholder="example@email.com"/>
+
+                <textarea class ="text-space" id="message" placeholder="Type your message here..." required></textarea>
+
+                <button onclick="hideSection()" class="close-button">Close</button>
             </div>
+
+            <div class="buttons">
+                <button onclick="showSection()" class="button" id="button">Message</button>
+            </div>
+           
+
+            
 
             <div class="skills">
                 <div class="skill-icons">
@@ -59,7 +103,8 @@
                 
             </div>
             </div>
-
+            
         </div>
+        <script src="myscripts.js"></script>
     </body>
 </html>
